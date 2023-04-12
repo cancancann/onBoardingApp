@@ -33,7 +33,7 @@ const App = () => {
 
           {/* Eğer ReactNative CLi kullanıyorsanız olduğu gibi bırakıp
             emülatördeki storage kısmını temizlemeniz gerekiyor */}
-          {!isAppFirstLaunched && (
+          {isAppFirstLaunched && (
             <Stack.Screen name="OnboardingScreen" component={BoardScreen} />
           )}
           <Stack.Screen name="HomeScreen" component={HomeScreen} />
